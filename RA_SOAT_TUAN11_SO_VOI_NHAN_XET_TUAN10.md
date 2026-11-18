@@ -11,7 +11,7 @@
 | Mức | Số mục | Ý nghĩa |
 |---|:---:|---|
 | 🔴 Nghiêm trọng | 8 (B1–B7, B25) | Sai số liệu hoặc sai kết luận khoa học. Nếu thầy chạy lại sẽ phát hiện ngay. |
-| 🟠 Lớn | 12 (B8–B16, B27–B29) | Không đáp ứng đúng tiêu chí "Xong khi" của thầy, hoặc nói quá bằng chứng. |
+| 🟠 Lớn | 14 (B8–B16, B27–B31) | Không đáp ứng đúng tiêu chí "Xong khi" của thầy, hoặc nói quá bằng chứng. |
 | 🟡 Nhỏ | 9 (B17–B24, B26) | Trình bày, định dạng, nhất quán. |
 
 **Ba phát hiện quan trọng nhất**
@@ -70,6 +70,8 @@
 | **B28** | Notebook bổ sung 08 (L1 ±2) và 09 (L2), lượt chạy đầu 31/10 | Bật `group_by_length=True` để tăng tốc; trong transformers 4.57.6, `Trainer.predict()` khi đó cũng dùng `LengthGroupedSampler` (không seed riêng) nên **thứ tự dự đoán bị xáo**. Điểm validation lúc train vẫn đúng (L2 0,5809; L1 ±2 0,5827), nhưng file dự đoán lệch hàng (Macro-F1 tính lại chỉ 0,33) và không dựng lại được thứ tự | Phát hiện trước khi dùng số nào. Sửa: ép `SequentialSampler` khi predict + assert nhãn khớp từng dòng và Macro-F1 cuối = `best_metric`. Train lại L2 và L1 ±2; output lỗi giữ trong `*_run1_UNORDERED_PREDICTIONS_*` |
 
 | **B29** | Bản sửa B28, lượt chạy 31/10 (L1-para, L2 lượt 2) | Assert "Macro-F1 dự đoán cuối = best_metric lúc train" đặt dung sai 1e-6, quá chặt: lúc train đánh giá gom batch theo độ dài, lúc dự đoán batch tuần tự, padding khác nhau nên bf16 lệch rất nhỏ (L2: +0,00007). Assert làm dừng notebook trước khi lưu dự đoán | L2: cứu từ checkpoint tốt nhất còn trên đĩa (notebook `09r_…`, dự đoán tuần tự, lệch +0,00007). L1-para lượt 1 mất (phiên đã tắt), chạy lại. Dung sai sửa thành 0,005 (lỗi xáo thứ tự B28 làm tụt ~0,25 nên vẫn bị bắt) và luôn ghi log mức lệch |
+| **B30** | Báo cáo §1.2 (lỗi LR 6,13% tuần 8) | Viết "F1 Ineffective bị ghi vào ô accuracy". Sai: `MLA.ipynb` tính accuracy đúng; hàm `predict_with_threshold` đọc cột 0 = P(Adequate) tưởng là P(Ineffective), gán gần như mọi đơn vị là Ineffective (log: acc 0,0613, Macro-F1 0,0477, recall Ineff 0,7399) | Viết lại §1.2 theo đúng code (01/11), dựng lại docx/html |
+| **B31** | Lịch sử dùng test | Tuần 8 (`MLA.ipynb`, `SPLIT_TEST_CSV_EXACTLY_IN_HALF = True`) dùng một nửa file test chính thức làm validation cho LR/SVM | Ghi nhận; mô hình tuần 11 không chọn gì trên test. Nói rõ khi được hỏi "test đã dùng thế nào" (KB 18 §4) |
 
 ### 🟡 Nhỏ
 

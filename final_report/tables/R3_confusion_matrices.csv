@@ -1,0 +1,46 @@
+split,system,gold,pred_Ineffective,pred_Adequate,pred_Effective
+validation,Majority class (always Adequate),Ineffective,0,1328,0
+validation,Majority class (always Adequate),Adequate,0,22897,0
+validation,Majority class (always Adequate),Effective,0,4877,0
+validation,"Random Forest, Feature Set B (wk 9)",Ineffective,286,999,43
+validation,"Random Forest, Feature Set B (wk 9)",Adequate,764,20018,2115
+validation,"Random Forest, Feature Set B (wk 9)",Effective,21,2687,2169
+validation,"DeBERTa-v3 L0, unit only (wk 11)",Ineffective,568,710,50
+validation,"DeBERTa-v3 L0, unit only (wk 11)",Adequate,1101,17285,4511
+validation,"DeBERTa-v3 L0, unit only (wk 11)",Effective,28,1485,3364
+validation,"DeBERTa-v3 L1, +-1 unit (wk 11, locked)",Ineffective,594,700,34
+validation,"DeBERTa-v3 L1, +-1 unit (wk 11, locked)",Adequate,1138,17768,3991
+validation,"DeBERTa-v3 L1, +-1 unit (wk 11, locked)",Effective,29,1625,3223
+validation,DeBERTa-v3 Prompt-Aware (wk 11),Ineffective,648,646,34
+validation,DeBERTa-v3 Prompt-Aware (wk 11),Adequate,1301,17628,3968
+validation,DeBERTa-v3 Prompt-Aware (wk 11),Effective,25,1575,3277
+validation,DeBERTa-v3 L1 +-2 units (supp.),Ineffective,661,633,34
+validation,DeBERTa-v3 L1 +-2 units (supp.),Adequate,1298,17669,3930
+validation,DeBERTa-v3 L1 +-2 units (supp.),Effective,32,1607,3238
+validation,DeBERTa-v3 L1 paragraph (supp.),Ineffective,751,520,57
+validation,DeBERTa-v3 L1 paragraph (supp.),Adequate,1743,16247,4907
+validation,DeBERTa-v3 L1 paragraph (supp.),Effective,47,1328,3502
+validation,DeBERTa-v3 L2 source passage (supp.),Ineffective,723,581,24
+validation,DeBERTa-v3 L2 source passage (supp.),Adequate,1732,17290,3875
+validation,DeBERTa-v3 L2 source passage (supp.),Effective,46,1575,3256
+validation,"DeBERTa-v3 L3 whole essay, 3 ep (supp.)",Ineffective,779,518,31
+validation,"DeBERTa-v3 L3 whole essay, 3 ep (supp.)",Adequate,1671,16013,5213
+validation,"DeBERTa-v3 L3 whole essay, 3 ep (supp.)",Effective,39,1180,3658
+validation,"DeBERTa-v3 L3 whole essay, 7 ep (supp.)",Ineffective,571,733,24
+validation,"DeBERTa-v3 L3 whole essay, 7 ep (supp.)",Adequate,1026,17392,4479
+validation,"DeBERTa-v3 L3 whole essay, 7 ep (supp.)",Effective,36,1644,3197
+test,Majority class (always Adequate),Ineffective,0,4225,0
+test,Majority class (always Adequate),Adequate,0,75363,0
+test,Majority class (always Adequate),Effective,0,14089,0
+test,"Random Forest, Feature Set B",Ineffective,726,3309,190
+test,"Random Forest, Feature Set B",Adequate,2181,66668,6514
+test,"Random Forest, Feature Set B",Effective,41,7894,6154
+test,"DeBERTa-v3 L0, unit only",Ineffective,1571,2493,161
+test,"DeBERTa-v3 L0, unit only",Adequate,3421,58542,13400
+test,"DeBERTa-v3 L0, unit only",Effective,59,4463,9567
+test,"DeBERTa-v3 L1, +-1 unit (locked)",Ineffective,1755,2358,112
+test,"DeBERTa-v3 L1, +-1 unit (locked)",Adequate,3528,59882,11953
+test,"DeBERTa-v3 L1, +-1 unit (locked)",Effective,33,4799,9257
+test,DeBERTa-v3 Prompt-Aware (exploratory),Ineffective,1866,2246,113
+test,DeBERTa-v3 Prompt-Aware (exploratory),Adequate,3731,59284,12348
+test,DeBERTa-v3 Prompt-Aware (exploratory),Effective,34,4586,9469

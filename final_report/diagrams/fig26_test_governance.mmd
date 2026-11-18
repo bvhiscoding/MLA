@@ -1,0 +1,8 @@
+flowchart LR
+    A["Development<br/>all model, epoch and threshold<br/>selection on the 29,102-unit<br/>validation split"] --> B["Protocol fixed<br/>RF FS-B · DeBERTa L0 · L1 (locked)<br/>configuration and decision rule"]
+    B --> C["Scoring pass<br/>L0/L1/PA trained, validation logged,<br/>test scored once · lock file + sha256"]
+    B --> D["Random Forest<br/>must reproduce its validation<br/>result (0.5261) before the<br/>single test scoring"]
+    C --> E["After the test<br/>context ladder, calibration correction,<br/>LOPO, thresholds:<br/>validation only, exploratory"]
+    D --> E
+    classDef sealed fill:#F3E5E5,stroke:#8B1A1A,color:#000;
+    class C,D sealed;

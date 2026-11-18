@@ -1,0 +1,11 @@
+flowchart TD
+    R1["persuade_corpus_2.0_train.csv<br/>173,266 records · 15,594 essays<br/>sha256 f61319ed…"] --> F1["Keep records with an effectiveness label and non-empty text<br/>(drop 28,977 'Unannotated' and 4 empty-label records)<br/>strip text · reset_index → row_idx"]
+    F1 --> U1["144,289 annotated units · 15,594 essays"]
+    U1 --> G["GroupShuffleSplit by essay, 80/20, seed 42<br/>(no essay in two splits; all 15 prompts in both)"]
+    G --> TR["Train · 115,187 units · 12,475 essays<br/>fit TF-IDF / scalers / DeBERTa weights"]
+    G --> VA["Validation · 29,102 units · 3,119 essays<br/>model, epoch, threshold selection;<br/>all error analysis"]
+    R2["persuade_corpus_2.0_test.csv<br/>112,117 records · 10,402 essays<br/>sha256 8b4cbbda…"] --> F2["Same filter<br/>(drop 18,440 records)"]
+    F2 --> TE["Official test · 93,677 units · 10,402 essays<br/>scored once on 28–29 Oct 2026 (lock file)"]
+    U1 -.-> L["Leave-one-prompt-out folds<br/>train on 14 prompts → score all units of the 15th<br/>(RF: 15 folds; SVM, DeBERTa: 3 folds)"]
+    classDef sealed fill:#F3E5E5,stroke:#8B1A1A,color:#000;
+    class TE sealed;

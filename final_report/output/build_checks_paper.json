@@ -1,0 +1,866 @@
+{
+  "pdf_pages": 13,
+  "qa_png_folder": "C:\\Users\\Admin\\AppData\\Local\\Temp\\MLA-report-QA-qhij7zkb",
+  "source_sha256": "bb67efae6a395b58bcd0e3f5836e37f3c86023638ee1ee02e665c213da7727f9",
+  "raw_markdown": {
+    "**": 0,
+    ":::": 0,
+    "$$": 0,
+    "{.unnumbered}": 0,
+    "{.appendix}": 0,
+    "![": 0,
+    "|---": 0
+  },
+  "figures": 2,
+  "figure_captions": 2,
+  "table_captions": 6,
+  "tables_including_abbreviations": 6,
+  "caption_positions_pass": true,
+  "figure_caption_same_page_pass": true,
+  "no_orphan_table_headers_pass": true,
+  "native_equations": 1,
+  "equation_log_upright": true,
+  "equation_continuation_no_indent": true,
+  "long_code_paragraphs_left_aligned": 1,
+  "long_code_alignment_errors": [],
+  "bold_errors": [],
+  "font_errors": [],
+  "table_width_errors": [],
+  "image_widths_pass": true,
+  "original_image_bytes_preserved": true,
+  "repeated_table_headers_pass": true,
+  "no_split_rows_pass": true,
+  "landscape_sections": 0,
+  "landscape_tables": [],
+  "table_layouts": [
+    {
+      "label": "Table 1",
+      "rows": [
+        [
+          "Split",
+          "System",
+          "Macro-F1",
+          "F1 Ineff",
+          "Recall Ineff",
+          "F1 Adeq",
+          "F1 Eff",
+          "Accuracy"
+        ],
+        [
+          "Val",
+          "Majority (Adequate)",
+          "0.294",
+          "0.000",
+          "0.0%",
+          "0.881",
+          "0.000",
+          "78.7%"
+        ],
+        [
+          "Val",
+          "Logistic Regression, FS-B",
+          "0.489",
+          "0.249",
+          "57.6%",
+          "0.732",
+          "0.486",
+          "62.7%"
+        ],
+        [
+          "Val",
+          "Random Forest, FS-B",
+          "0.523",
+          "0.238",
+          "21.5%",
+          "0.859",
+          "0.471",
+          "77.2%"
+        ],
+        [
+          "Val",
+          "DeBERTa L0",
+          "0.572",
+          "0.376",
+          "42.8%",
+          "0.816",
+          "0.526",
+          "72.9%"
+        ],
+        [
+          "Val",
+          "DeBERTa L1 (locked)",
+          "0.581",
+          "0.385",
+          "44.7%",
+          "0.827",
+          "0.532",
+          "74.2%"
+        ],
+        [
+          "Test",
+          "Majority (Adequate)",
+          "0.297",
+          "0.000",
+          "0.0%",
+          "0.892",
+          "0.000",
+          "80.5%"
+        ],
+        [
+          "Test",
+          "Random Forest, FS-B",
+          "0.510",
+          "0.202",
+          "17.2%",
+          "0.870",
+          "0.457",
+          "78.5%"
+        ],
+        [
+          "Test",
+          "DeBERTa L0",
+          "0.561",
+          "0.339",
+          "37.2%",
+          "0.831",
+          "0.514",
+          "74.4%"
+        ],
+        [
+          "Test",
+          "DeBERTa L1 (locked)",
+          "0.577",
+          "0.368",
+          "41.5%",
+          "0.841",
+          "0.523",
+          "75.7%"
+        ],
+        [
+          "Test",
+          "DeBERTa Prompt-Aware ¹",
+          "0.581",
+          "0.379",
+          "44.2%",
+          "0.838",
+          "0.526",
+          "75.4%"
+        ]
+      ],
+      "align": [
+        "---",
+        "---",
+        "---:",
+        "---:",
+        "---:",
+        "---:",
+        "---:",
+        "---:"
+      ],
+      "size": 10.5,
+      "landscape": false,
+      "widths_cm": [
+        1.4017189443939493,
+        3.6072034310536516,
+        1.8638081217019091,
+        1.6335609331543723,
+        1.8545355216980455,
+        1.6479030268224495,
+        1.6210953324169282,
+        2.3701746887586936
+      ],
+      "minimums_cm": [
+        1.0939728458636595,
+        2.091457179924184,
+        1.401628485435183,
+        1.186215277481224,
+        1.3401335310234734,
+        1.1967055932338098,
+        1.186215277481224,
+        1.854339870413151
+      ]
+    },
+    {
+      "label": "Table 2",
+      "rows": [
+        [
+          "Metric",
+          "Validation (29,102 units)",
+          "Official test (93,677 units)"
+        ],
+        [
+          "Macro-F1",
+          "+0.0087 [+0.0015, +0.0161]",
+          "+0.0159 [+0.0115, +0.0205]"
+        ],
+        [
+          "F1 Ineffective",
+          "+0.0091 [−0.0097, +0.0278]",
+          "+0.0292 [+0.0185, +0.0408]"
+        ],
+        [
+          "F1 Adequate",
+          "+0.0108 [+0.0074, +0.0145]",
+          "+0.0098 [+0.0080, +0.0117]"
+        ],
+        [
+          "F1 Effective",
+          "+0.0061 [−0.0017, +0.0136]",
+          "+0.0087 [+0.0040, +0.0135]"
+        ],
+        [
+          "Units whose prediction changes",
+          "4,612 (15.8%)",
+          "14,224 (15.2%)"
+        ],
+        [
+          "Gold Ineffective gained / lost by L1",
+          "144 / 118",
+          "519 / 335"
+        ]
+      ],
+      "align": [
+        "---",
+        "---",
+        "---"
+      ],
+      "size": 11,
+      "landscape": false,
+      "widths_cm": [
+        4.77009999331443,
+        5.705458236316007,
+        5.524441770369565
+      ],
+      "minimums_cm": [
+        2.033088649665339,
+        2.0994067377563983,
+        1.8650196664174257
+      ]
+    },
+    {
+      "label": "Table 3",
+      "rows": [
+        [
+          "Held-out prompt",
+          "SVM",
+          "RF",
+          "DeBERTa",
+          "Units / essays (same set)",
+          "LOPO",
+          "In-domain",
+          "Gap [95% CI]"
+        ],
+        [
+          "A Cowboy Who Rode the Waves",
+          "0.337",
+          "0.350",
+          "0.402",
+          "1,030 / 134",
+          "0.384",
+          "0.476",
+          "−0.092 [−0.132, −0.049]"
+        ],
+        [
+          "Summer projects",
+          "0.427",
+          "0.434",
+          "0.438",
+          "2,074 / 177",
+          "0.483",
+          "0.508",
+          "−0.025 [−0.052, +0.011]"
+        ],
+        [
+          "Distance learning",
+          "0.469",
+          "0.501",
+          "0.538",
+          "3,533 / 283",
+          "0.528",
+          "0.576",
+          "−0.048 [−0.078, −0.019]"
+        ]
+      ],
+      "align": [
+        "---",
+        "---:",
+        "---:",
+        "---:",
+        "---",
+        "---:",
+        "---:",
+        "---"
+      ],
+      "size": 10.5,
+      "landscape": false,
+      "widths_cm": [
+        2.6415944129992703,
+        1.4449005390287497,
+        1.4192643016802846,
+        2.2997597632115467,
+        2.0047883255810603,
+        1.678663010093523,
+        1.8710861074043286,
+        2.6399435400012363
+      ],
+      "minimums_cm": [
+        1.6486935081598753,
+        1.186215277481224,
+        1.186215277481224,
+        1.9785958518273996,
+        1.32005723708318,
+        1.4023519554870856,
+        1.5466842308416275,
+        1.6110730654609469
+      ]
+    },
+    {
+      "label": "Table 4",
+      "rows": [
+        [
+          "Quartile (words)",
+          "Gold Ineff / Eff",
+          "Error rate",
+          "Share A↔E",
+          "Macro-F1",
+          "Error, score 3",
+          "Error, score 4"
+        ],
+        [
+          "Q1 (≤315)",
+          "9.0% / 5.3%",
+          "22.0%",
+          "47.5%",
+          "0.532",
+          "19.3%",
+          "19.6%"
+        ],
+        [
+          "Q2 (316–422)",
+          "5.0% / 10.7%",
+          "23.0%",
+          "67.1%",
+          "0.551",
+          "21.8%",
+          "22.0%"
+        ],
+        [
+          "Q3 (423–566)",
+          "2.9% / 18.3%",
+          "27.9%",
+          "83.8%",
+          "0.552",
+          "22.9%",
+          "28.5%"
+        ],
+        [
+          "Q4 (≥567)",
+          "1.3% / 32.8%",
+          "30.5%",
+          "92.0%",
+          "0.526",
+          "28.2%",
+          "31.1%"
+        ]
+      ],
+      "align": [
+        "---",
+        "---",
+        "---:",
+        "---:",
+        "---:",
+        "---:",
+        "---:"
+      ],
+      "size": 10.5,
+      "landscape": false,
+      "widths_cm": [
+        2.96819430658196,
+        2.63608208696526,
+        2.015747954608612,
+        2.047710491396704,
+        2.0350085511747253,
+        2.148628304636369,
+        2.148628304636369
+      ],
+      "minimums_cm": [
+        1.6901121686312914,
+        1.3095669213305943,
+        1.3095669213305943,
+        1.3095669213305943,
+        1.401628485435183,
+        1.3708810082293283,
+        1.3708810082293283
+      ]
+    },
+    {
+      "label": "Table A.1",
+      "rows": [
+        [
+          "Run",
+          "Model and input",
+          "Evaluated on",
+          "Configuration",
+          "Status"
+        ],
+        [
+          "R02",
+          "LR, RF and other classical models on FS-B",
+          "Validation",
+          "Seed 42, scikit-learn 1.6.1",
+          "Used (RF = classical system)"
+        ],
+        [
+          "R04",
+          "DeBERTa L0 and L1, first run",
+          "Validation",
+          "Section 3.2",
+          "Run-to-run comparison, ten cases"
+        ],
+        [
+          "R05",
+          "RF FS-B, 15 LOPO folds",
+          "Held-out prompts",
+          "150 trees, depth 35",
+          "Used"
+        ],
+        [
+          "R06",
+          "DeBERTa L0, L1, Prompt-Aware",
+          "Validation; test once",
+          "Section 3.2, A100, bf16",
+          "Used (lock file)"
+        ],
+        [
+          "R07",
+          "RF FS-B",
+          "Validation gate, then test once",
+          "200 trees, depth 35",
+          "Used"
+        ],
+        [
+          "R08–R09",
+          "Linear SVM, test and 3 LOPO folds",
+          "Test; held-out prompts",
+          "TF-IDF",
+          "Supplementary"
+        ],
+        [
+          "R10",
+          "DeBERTa L0, 3 LOPO folds",
+          "Held-out prompts, once",
+          "Fixed 3 epochs",
+          "Used"
+        ],
+        [
+          "R11–R12",
+          "Wider context levels; class-offset correction",
+          "Validation only",
+          "Level 1 recipe",
+          "Exploratory"
+        ],
+        [
+          "R13",
+          "LR FS-B interpretable reference",
+          "Validation",
+          "C = 1, balanced",
+          "Used"
+        ]
+      ],
+      "align": [
+        "---",
+        "---",
+        "---",
+        "---",
+        "---"
+      ],
+      "size": 11,
+      "landscape": false,
+      "widths_cm": [
+        1.3903848466175783,
+        4.172332875677715,
+        3.185248569933655,
+        3.7327975649590854,
+        3.5192361428119656
+      ],
+      "minimums_cm": [
+        1.0646550832841835,
+        2.3135194221646755,
+        2.0986488167496433,
+        2.7029013393850385,
+        2.7021434183782835
+      ]
+    },
+    {
+      "label": "Table E.1",
+      "rows": [
+        [
+          "Case",
+          "row_idx",
+          "Type",
+          "Unit (start)",
+          "P (L0 / L1 / L1 locked)",
+          "Information needed"
+        ],
+        [
+          "1",
+          "2467",
+          "Counterclaim",
+          "\"There are many reason on why texting while driving is very useful\"",
+          "0.022 / 0.029 / 0.027",
+          "Whole essay"
+        ],
+        [
+          "2",
+          "10303",
+          "Evidence",
+          "\"To provide reasonings to my strong point, brings me back to paragraph 36. …\"",
+          "0.000 / 0.001 / 0.008",
+          "Unit itself"
+        ],
+        [
+          "3",
+          "25520",
+          "Position",
+          "\"I think you shouldn't join the Seagoing Cowboys\"",
+          "0.022 / 0.010 / 0.006",
+          "Unit itself"
+        ],
+        [
+          "4",
+          "105080",
+          "Counterclaim",
+          "\"Not allowing students to use there phones at all\"",
+          "0.038 / 0.090 / 0.170",
+          "Unit itself"
+        ],
+        [
+          "5",
+          "86267",
+          "Position",
+          "\"The Driverless people can cause problems.\"",
+          "0.028 / 0.151 / 0.103",
+          "Source / task"
+        ],
+        [
+          "6",
+          "114270",
+          "Counterclaim",
+          "\"But Sometimes it could be a distraction from you doing all your work.\"",
+          "0.031 / 0.040 / 0.035",
+          "Whole essay"
+        ],
+        [
+          "7",
+          "110025",
+          "Position",
+          "\"I reconsider that are principal should let us eight graders bring are cell phones …\"",
+          "0.035 / 0.097 / 0.052",
+          "Prompt / task"
+        ],
+        [
+          "8",
+          "108613",
+          "Claim",
+          "\"Some kids will ask there parents to transfer school\"",
+          "0.021 / 0.124 / 0.058",
+          "Local context"
+        ],
+        [
+          "9",
+          "83105",
+          "Lead",
+          "\"The future is near and the talk about driverless cars is upon us\"",
+          "0.045 / 0.080 / 0.143",
+          "Prompt / task"
+        ],
+        [
+          "10",
+          "9735",
+          "Claim",
+          "\"Another cars is a bad idea is because of its gas.\"",
+          "0.039 / 0.032 / 0.039",
+          "Unit itself"
+        ]
+      ],
+      "align": [
+        ":---:",
+        "---:",
+        "---",
+        "---",
+        "---",
+        "---"
+      ],
+      "size": 10.5,
+      "landscape": false,
+      "widths_cm": [
+        1.1947293314070127,
+        1.9642606344427729,
+        2.784734476203485,
+        4.675939337108648,
+        2.494667168002657,
+        2.885669052835424
+      ],
+      "minimums_cm": [
+        1.114049139803953,
+        1.649236110698802,
+        2.3689079448287798,
+        1.9990338807936443,
+        1.5050847028572356,
+        2.2871558289638014
+      ]
+    }
+  ],
+  "table_notes_pass": true,
+  "table_spacing_pass": true,
+  "arial_fonts": [],
+  "mid_word_breaks": [],
+  "table_pdf_text_mismatches": [],
+  "table_pdf_unverified_rows": [],
+  "table_pdf_checked_cells": 306,
+  "code_paths_over_three_lines": [],
+  "code_path_max_lines_by_table": {},
+  "table_body_max_lines_by_column": {
+    "Table 1": [
+      1,
+      2,
+      1,
+      1,
+      1,
+      1,
+      1,
+      1
+    ],
+    "Table 2": [
+      2,
+      1,
+      1
+    ],
+    "Table 3": [
+      3,
+      1,
+      1,
+      1,
+      1,
+      1,
+      1,
+      2
+    ],
+    "Table 4": [
+      1,
+      1,
+      1,
+      1,
+      1,
+      1,
+      1
+    ],
+    "Table A.1": [
+      2,
+      2,
+      2,
+      2,
+      3
+    ],
+    "Table E.1": [
+      1,
+      1,
+      1,
+      4,
+      2,
+      1
+    ]
+  },
+  "heading_cross_references": {},
+  "contents_field_count": 0,
+  "contents_entries": [],
+  "contents_have_page_numbers": [],
+  "bookmark_error": false,
+  "pdf_bookmarks": 19,
+  "pdf_fonts_embedded": true,
+  "blank_pdf_pages": [],
+  "content_blocks_missing": [],
+  "text_outside_horizontal_margins": [],
+  "sample_page_locations": {
+    "Table of Contents": [],
+    "List of Figures": [],
+    "List of Tables": [],
+    "Table 5.2.": [],
+    "Table 6.5.": [],
+    "Table 6.7.": [],
+    "Table 6.10.": [],
+    "Table 7.4.": [],
+    "Table F.2.": [],
+    "Architecture and loss": [],
+    "B.3 Commands": [],
+    "Figure 3.1.": [],
+    "Figure 6.4.": []
+  },
+  "word": {
+    "headings": [
+      {
+        "text": "Abstract",
+        "number": "",
+        "page": 2
+      },
+      {
+        "text": "Introduction",
+        "number": "1",
+        "page": 2
+      },
+      {
+        "text": "Related Work",
+        "number": "2",
+        "page": 3
+      },
+      {
+        "text": "Data and Method",
+        "number": "3",
+        "page": 3
+      },
+      {
+        "text": "Data, units and labels",
+        "number": "3.1",
+        "page": 3
+      },
+      {
+        "text": "Models",
+        "number": "3.2",
+        "page": 4
+      },
+      {
+        "text": "Experimental Setup",
+        "number": "4",
+        "page": 4
+      },
+      {
+        "text": "Results",
+        "number": "5",
+        "page": 5
+      },
+      {
+        "text": "Model families on the same units (RQ1)",
+        "number": "5.1",
+        "page": 5
+      },
+      {
+        "text": "Level 0 versus Level 1 on the same units (RQ2)",
+        "number": "5.2",
+        "page": 6
+      },
+      {
+        "text": "Unseen prompts (RQ3)",
+        "number": "5.3",
+        "page": 7
+      },
+      {
+        "text": "Error Analysis",
+        "number": "6",
+        "page": 7
+      },
+      {
+        "text": "Discussion and Conclusion",
+        "number": "7",
+        "page": 9
+      },
+      {
+        "text": "References",
+        "number": "",
+        "page": 10
+      },
+      {
+        "text": "Appendix A. Run Table",
+        "number": "",
+        "page": 11
+      },
+      {
+        "text": "Appendix B. Reproduction",
+        "number": "",
+        "page": 11
+      },
+      {
+        "text": "Appendix C. Individual Contributions",
+        "number": "",
+        "page": 12
+      },
+      {
+        "text": "Appendix D. Use of AI Tools",
+        "number": "",
+        "page": 12
+      },
+      {
+        "text": "Appendix E. Ten Failure Cases",
+        "number": "",
+        "page": 12
+      }
+    ],
+    "contents_fields": [],
+    "figure_caption_pages": [
+      [
+        6,
+        6
+      ],
+      [
+        8,
+        8
+      ]
+    ],
+    "table_header_first_row_pages": [
+      [
+        5,
+        5
+      ],
+      [
+        7,
+        7
+      ],
+      [
+        7,
+        7
+      ],
+      [
+        8,
+        8
+      ],
+      [
+        11,
+        11
+      ],
+      [
+        12,
+        12
+      ]
+    ],
+    "table_pages": [
+      [
+        5,
+        6
+      ],
+      [
+        7,
+        7
+      ],
+      [
+        7,
+        7
+      ],
+      [
+        8,
+        8
+      ],
+      [
+        11,
+        11
+      ],
+      [
+        12,
+        13
+      ]
+    ]
+  },
+  "main_text_pages": {
+    "from_page": 2,
+    "references_page": 10,
+    "pages_before_references": 8
+  }
+}

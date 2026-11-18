@@ -1,0 +1,19 @@
+flowchart LR
+    subgraph D["1 · Data"]
+      D1["Raw CSV"] --> D2["Annotated units<br/>row_idx, essay_id_comp"] --> D3["Essay-grouped split"]
+    end
+    subgraph C["2 · Classical family"]
+      C1["Feature Set B (fit on train only):<br/>word 1–2-gram TF-IDF (15k, min_df 2) ·<br/>discourse-type one-hot ·<br/>5 standardised structural features<br/>(unit length, essay length, position)"] --> C2["Random Forest<br/>200 trees, depth 35,<br/>class_weight balanced"]
+      C1 --> C3["Logistic Regression<br/>(interpretable reference)"]
+    end
+    subgraph N["3 · Transformer family"]
+      N1["Input builder<br/>L0 · L1 · PA · L1±2 ·<br/>paragraph · L2 · L3"] --> N2["DeBERTa-v3-base encoder<br/>+ linear head"] --> N3["Class-weighted<br/>cross-entropy"]
+    end
+    subgraph E["4 · Evaluation"]
+      E1["Per-class P/R/F1 ·<br/>Macro-F1 · QWK"] --> E2["Paired essay<br/>bootstrap CI"] --> E3["Error analysis:<br/>length × score,<br/>10 cases, thresholds,<br/>LOPO"]
+    end
+    D3 --> C1
+    D3 --> N1
+    C2 --> E1
+    C3 --> E1
+    N3 --> E1
