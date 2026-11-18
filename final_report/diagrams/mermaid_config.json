@@ -1,0 +1,49 @@
+{
+ "theme": "base",
+ "themeVariables": {
+  "fontFamily": "Times New Roman",
+  "fontSize": "16px",
+  "primaryColor": "#EEF2F8",
+  "primaryBorderColor": "#1F3864",
+  "primaryTextColor": "#000000",
+  "lineColor": "#1F3864",
+  "secondaryColor": "#F5F5F5",
+  "tertiaryColor": "#FFFFFF",
+  "clusterBkg": "#F7F9FC",
+  "clusterBorder": "#8EA3C7",
+  "edgeLabelBackground": "#FFFFFF"
+ },
+ "flowchart": {
+  "curve": "basis",
+  "htmlLabels": true,
+  "nodeSpacing": 40,
+  "rankSpacing": 45,
+  "padding": 12,
+  "useMaxWidth": false,
+  "wrappingWidth": 380
+ },
+ "sequence": {
+  "useMaxWidth": false,
+  "actorFontFamily": "Times New Roman",
+  "messageFontFamily": "Times New Roman",
+  "noteFontFamily": "Times New Roman"
+ },
+ "timeline": {
+  "useMaxWidth": false
+ },
+ "gantt": {
+  "useMaxWidth": false
+ },
+ "class": {
+  "useMaxWidth": false
+ },
+ "state": {
+  "useMaxWidth": false
+ },
+ "er": {
+  "useMaxWidth": false
+ },
+ "journey": {
+  "useMaxWidth": false
+ }
+}

@@ -1,0 +1,7 @@
+row_idx,raw_record_in_csv,essay_id_comp,essay_id_as_stored,discourse_id_as_stored,prompt,discourse_type,text_first_60_chars,raw_label_string,label_id_loaded,true_label_in_prediction_file,match,L1_pred,L1_P_ineff/adeq/eff
+93085,111932,A1B2F28757E3,5085319,1.61513E+12,Does the electoral college work?,Claim,One of the best parts of this is that every state get attenc,Adequate,1,1,True,Ineffective,0.918/0.082/0.001
+53101,64465,6D1D5D542E08,AAATRP14318000708844,1.61956E+12,Facial action coding system,Claim,Another way the software can help is better grades when a st,Adequate,1,1,True,Adequate,0.036/0.928/0.036
+25444,31612,7D378AEFD0C3,AAAOPP13416000087851,1.62005E+12,A Cowboy Who Rode the Waves,Claim,it's a once in a lifetime expirience,Adequate,1,1,True,Adequate,0.003/0.608/0.389
+123137,146304,8AE119913109,AAAXMP138200001202352125_OR,1.62197E+12,Distance learning,Concluding Statement,While many students may think that working from home is righ,Effective,2,2,True,Effective,0.000/0.114/0.886
+3642,4088,E0ACC902891D,5.53979E+12,1.62252E+12,Phones and driving,Claim,Using your cell phone when driving could be potentially fata,Adequate,1,1,True,Adequate,0.006/0.963/0.032
+108613,130257,FE3141FA4163,2021007793,1.62015E+12,Cell phones at school,Claim,Some kids will ask there parents to transfer school,Ineffective,0,0,True,Adequate,0.058/0.937/0.005

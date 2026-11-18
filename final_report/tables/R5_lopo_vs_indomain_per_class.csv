@@ -1,0 +1,10 @@
+held_out_prompt,setting,units/essays,gold %Ineff,macro_f1,accuracy,f1_Ineffective,recall_Ineffective,f1_Adequate,f1_Effective
+A Cowboy Who Rode the Waves,"LOPO DeBERTa L0, all units of held-out prompt",5158 units / 688 essays,4.25,0.4019,0.647,0.152,0.4612,0.7768,0.277
+A Cowboy Who Rode the Waves,"LOPO DeBERTa L0, validation essays of that prompt",1030 / 134,4.27,0.384,0.6437,0.1348,0.4318,0.7773,0.24
+A Cowboy Who Rode the Waves,"In-domain DeBERTa L0 (wk 11), same validation essays",1030 / 134,4.27,0.4755,0.7942,0.2353,0.3182,0.8818,0.3094
+Summer projects,"LOPO DeBERTa L0, all units of held-out prompt",9855 units / 875 essays,0.89,0.4378,0.6024,0.1074,0.0909,0.6365,0.5694
+Summer projects,"LOPO DeBERTa L0, validation essays of that prompt",2074 / 177,0.63,0.4827,0.6013,0.25,0.2308,0.6386,0.5597
+Summer projects,"In-domain DeBERTa L0 (wk 11), same validation essays",2074 / 177,0.63,0.5076,0.6572,0.2308,0.2308,0.7143,0.5779
+Distance learning,"LOPO DeBERTa L0, all units of held-out prompt",18526 units / 1498 essays,1.5,0.5381,0.6952,0.2437,0.3466,0.7566,0.6142
+Distance learning,"LOPO DeBERTa L0, validation essays of that prompt",3533 / 283,1.42,0.5279,0.6946,0.2098,0.3,0.7541,0.6199
+Distance learning,"In-domain DeBERTa L0 (wk 11), same validation essays",3533 / 283,1.42,0.5757,0.7404,0.2754,0.38,0.8001,0.6516

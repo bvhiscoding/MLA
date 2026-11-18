@@ -1,0 +1,16 @@
+flowchart TB
+    T["Target unit (e.g. Claim): 'Some kids will ask there parents to transfer school'"]
+    L0["L0 · unit only<br/>Claim [SEP] target"]
+    L1["L1 · ±1 neighbour (locked system)<br/>Claim [SEP] Previous: … [SEP] Target: … [SEP] Next: …"]
+    PA["Prompt-Aware<br/>Prompt: Cell phones at school [SEP] + L1 input"]
+    W2["L1 ±2<br/>two units before and after (each ≤ 600 characters)"]
+    PG["Paragraph<br/>target + the whole paragraph, target marked « … »"]
+    L2["L2 · source passage<br/>most similar source passage (TF-IDF, ≤ 90 words) + L1 input<br/>(4 of 7 source-based prompts)"]
+    L3["L3 · whole essay<br/>full essay with typed markers, ≤ 1,536 tokens;<br/>unit vector = mean of its token states"]
+    T --> L0 --> L1 --> PA
+    L1 --> W2 --> PG --> L3
+    L1 --> L2
+    classDef locked fill:#DCE6F5,stroke:#1F3864,color:#000,stroke-width:2px;
+    classDef supp fill:#F5F5F5,stroke:#7F7F7F,color:#000,stroke-dasharray:4 3;
+    class L1 locked;
+    class W2,PG,L2,L3 supp;

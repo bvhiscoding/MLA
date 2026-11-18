@@ -1,0 +1,16 @@
+prompt_name,units,essays,% Ineffective,% Adequate,% Effective,task
+Does the electoral college work?,16840.0,1818.0,11.54,69.89,18.57,Text dependent
+Exploring Venus,7252.0,928.0,11.43,77.05,11.51,Text dependent
+The Face on Mars,7229.0,819.0,9.89,83.39,6.72,Text dependent
+Facial action coding system,9175.0,1103.0,9.19,81.83,8.98,Text dependent
+Community service,6461.0,768.0,5.12,71.83,23.05,Independent
+A Cowboy Who Rode the Waves,5158.0,688.0,4.25,87.94,7.81,Text dependent
+Cell phones at school,7074.0,829.0,3.29,91.43,5.27,Independent
+Car-free cities,8368.0,983.0,2.96,85.59,11.45,Text dependent
+Grades for extracurricular activities,6122.0,815.0,2.38,85.32,12.3,Independent
+Mandatory extracurricular activities,8455.0,839.0,2.34,78.4,19.25,Independent
+Distance learning,18526.0,1498.0,1.5,72.9,25.61,Independent
+Driverless cars,12628.0,1386.0,1.5,83.12,15.37,Text dependent
+Phones and driving,6584.0,701.0,1.06,83.44,15.49,Independent
+Seeking multiple opinions,14562.0,1544.0,0.9,78.4,20.7,Independent
+Summer projects,9855.0,875.0,0.89,68.79,30.32,Independent

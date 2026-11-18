@@ -1,0 +1,10 @@
+flowchart LR
+    A["Student submits an<br/>argumentative essay"] --> B["Essay is segmented into<br/>discourse units with types<br/>(human annotation in PERSUADE;<br/>an upstream model in practice)"]
+    B --> C["Model scores each unit:<br/>P(Ineffective), P(Adequate), P(Effective)"]
+    C --> D{"Teacher-set rule<br/>(argmax or threshold θ<br/>on P(Ineffective))"}
+    D -->|"flagged"| E["Unit placed in the teacher's<br/>review queue with its essay"]
+    D -->|"not flagged"| F["No prompt to the teacher"]
+    E --> G["Teacher reads the unit in context<br/>and decides the feedback"]
+    G --> H["Feedback returned to the student<br/>(human decision, not the model's)"]
+    classDef human fill:#FFF4E5,stroke:#B36B00,color:#000;
+    class A,G,H human;
