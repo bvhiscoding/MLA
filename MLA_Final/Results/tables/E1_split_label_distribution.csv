@@ -1,0 +1,5 @@
+split,units,essays,% Ineffective,% Adequate,% Effective
+train,115187.0,12475.0,4.46,78.44,17.11
+validation,29102.0,3119.0,4.56,78.68,16.76
+test,93677.0,10402.0,4.51,80.45,15.04
+all annotated,237966.0,25996.0,4.49,79.26,16.25

@@ -1,0 +1,18 @@
+prediction_file,rows,join_key,essay_id_comp_mismatch,discourse_type_mismatch,gold_label_mismatch,prompt_mismatch
+val DeBERTa L0 (wk11),29102,row_idx,0.0,0,0,0.0
+val DeBERTa L1 (wk11),29102,row_idx,0.0,0,0,0.0
+val DeBERTa PA (wk11),29102,row_idx,0.0,0,0,0.0
+val L1 +-2,29102,row_idx,0.0,0,0,0.0
+val L1-paragraph,29102,row_idx,0.0,0,0,0.0
+val L2 source,29102,row_idx,0.0,0,0,0.0
+val L3 whole essay 3ep,29102,row_idx,0.0,0,0,0.0
+val L3 whole essay 7ep,29102,row_idx,0.0,0,0,0.0
+"val RF Feature Set B (wk9, row-aligned)",29102,row position,,0,0,
+"val DeBERTa L1 (wk10, row-aligned)",29102,row position,,0,0,
+test DeBERTa L0,93677,row_idx,0.0,0,0,0.0
+test DeBERTa L1,93677,row_idx,0.0,0,0,0.0
+test DeBERTa PA,93677,row_idx,0.0,0,0,0.0
+test RF Feature Set B,93677,row_idx,0.0,0,0,
+LOPO fold 1 (Cowboy),5158,row_idx,0.0,0,0,0.0
+LOPO fold 2 (Summer projects),9855,row_idx,0.0,0,0,0.0
+LOPO fold 3 (Distance learning),18526,row_idx,0.0,0,0,0.0

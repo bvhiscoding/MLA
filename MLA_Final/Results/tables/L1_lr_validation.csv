@@ -1,0 +1,2 @@
+system,n_units,macro_f1,accuracy,balanced_accuracy,kappa,qwk,precision_Ineffective,recall_Ineffective,f1_Ineffective,support_Ineffective,precision_Adequate,recall_Adequate,f1_Adequate,support_Adequate,precision_Effective,recall_Effective,f1_Effective,support_Effective
+"Logistic Regression, Feature Set B (balanced, argmax; fit on train, scored on validation)",29102,0.4888,0.6268,0.6133,0.2594,0.3487,0.1588,0.5761,0.249,1328,0.8771,0.6278,0.7318,22897,0.3929,0.636,0.4857,4877

@@ -1,0 +1,23 @@
+split,metric,L1_minus_L0,ci95_low,ci95_high,L0,L1,L0_F1_Ineff,L1_F1_Ineff
+validation,F1 Ineffective,0.0091,-0.0097,0.0278,,,,
+validation,F1 Adequate,0.0108,0.0074,0.0145,,,,
+validation,F1 Effective,0.0061,-0.0017,0.0136,,,,
+validation,Macro-F1,0.0087,0.0015,0.0161,,,,
+validation,"[Lead] Macro-F1 (n=1902, Ineff n=66)",-0.0071,,,0.5657,0.5585,0.3046,0.3
+validation,"[Position] Macro-F1 (n=3089, Ineff n=100)",-0.0291,,,0.5588,0.5297,0.358,0.2785
+validation,"[Claim] Macro-F1 (n=10135, Ineff n=317)",0.0186,,,0.5091,0.5277,0.2797,0.3023
+validation,"[Counterclaim] Macro-F1 (n=1148, Ineff n=39)",0.0184,,,0.4804,0.4988,0.2381,0.2391
+validation,"[Rebuttal] Macro-F1 (n=868, Ineff n=34)",0.0012,,,0.5133,0.5145,0.3256,0.2917
+validation,"[Evidence] Macro-F1 (n=9249, Ineff n=667)",0.0081,,,0.6247,0.6328,0.4435,0.4576
+validation,"[Concluding Statement] Macro-F1 (n=2711, Ineff n=105)",0.0063,,,0.5853,0.5916,0.3053,0.3511
+test,F1 Ineffective,0.0292,0.0185,0.0408,,,,
+test,F1 Adequate,0.0098,0.008,0.0117,,,,
+test,F1 Effective,0.0087,0.004,0.0135,,,,
+test,Macro-F1,0.0159,0.0115,0.0205,,,,
+test,"[Lead] Macro-F1 (n=5792, Ineff n=304)",0.0075,,,0.5825,0.59,0.3215,0.3443
+test,"[Position] Macro-F1 (n=10250, Ineff n=368)",0.0082,,,0.5357,0.5439,0.2826,0.2926
+test,"[Claim] Macro-F1 (n=32375, Ineff n=910)",0.0281,,,0.4903,0.5184,0.2367,0.2916
+test,"[Counterclaim] Macro-F1 (n=3717, Ineff n=114)",0.0369,,,0.4761,0.513,0.2009,0.2809
+test,"[Rebuttal] Macro-F1 (n=2880, Ineff n=112)",0.0283,,,0.4797,0.508,0.1544,0.2263
+test,"[Evidence] Macro-F1 (n=29885, Ineff n=1956)",0.0075,,,0.6148,0.6222,0.4009,0.4187
+test,"[Concluding Statement] Macro-F1 (n=8778, Ineff n=461)",0.0118,,,0.5967,0.6085,0.3547,0.3909

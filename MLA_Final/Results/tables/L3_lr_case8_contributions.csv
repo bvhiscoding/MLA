@@ -1,0 +1,16 @@
+feature,value,contribution_to_logit(Ineff)-logit(Adeq)
+kids will,0.378,-0.785
+ask,0.216,-0.567
+parents,0.249,-0.484
+kids,0.216,-0.471
+there parents,0.41,-0.341
+school,0.147,-0.292
+some kids,0.331,0.245
+unit/essay length ratio,-0.511,-0.239
+type=Claim,1.0,-0.232
+unit characters,-0.787,-0.222
+parents to,0.384,-0.219
+to,0.073,-0.186
+intercept difference,,0.798
+TOTAL logit(Ineff)-logit(Adeq),,-2.87
+P(Ineff/Adeq/Eff) = 0.052/0.916/0.032; prediction = Adequate,,
